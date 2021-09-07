@@ -12,7 +12,7 @@
 		16FEB2A726E696DC000436DB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2A626E696DC000436DB /* MainTableViewController.swift */; };
 		16FEB2AC26E696DE000436DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FEB2AB26E696DE000436DB /* Assets.xcassets */; };
 		16FEB2AF26E696DE000436DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FEB2AD26E696DE000436DB /* LaunchScreen.storyboard */; };
-		16FEB2B826E7728E000436DB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2B726E7728E000436DB /* Character.swift */; };
+		16FEB2B826E7728E000436DB /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2B726E7728E000436DB /* People.swift */; };
 		16FEB2BC26E77374000436DB /* GraphQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2BB26E77374000436DB /* GraphQLite.swift */; };
 		16FEB2BE26E77456000436DB /* ServerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2BD26E77456000436DB /* ServerData.swift */; };
 		16FEB2C526E77B70000436DB /* queries.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2C426E77B70000436DB /* queries.graphql */; };
@@ -30,7 +30,7 @@
 		16FEB2AB26E696DE000436DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16FEB2AE26E696DE000436DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16FEB2B026E696DE000436DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16FEB2B726E7728E000436DB /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		16FEB2B726E7728E000436DB /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		16FEB2BB26E77374000436DB /* GraphQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLite.swift; sourceTree = "<group>"; };
 		16FEB2BD26E77456000436DB /* ServerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerData.swift; sourceTree = "<group>"; };
 		16FEB2C426E77B70000436DB /* queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = queries.graphql; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		16FEB2B626E77267000436DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				16FEB2B726E7728E000436DB /* Character.swift */,
+				16FEB2B726E7728E000436DB /* People.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,7 +266,7 @@
 				16FEB2A326E696DC000436DB /* AppDelegate.swift in Sources */,
 				16FEB2A526E696DC000436DB /* SceneDelegate.swift in Sources */,
 				16FEB2CE26E7AB99000436DB /* CharacterTableViewController.swift in Sources */,
-				16FEB2B826E7728E000436DB /* Character.swift in Sources */,
+				16FEB2B826E7728E000436DB /* People.swift in Sources */,
 				16FEB2C526E77B70000436DB /* queries.graphql in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

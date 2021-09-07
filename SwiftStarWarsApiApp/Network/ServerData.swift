@@ -40,6 +40,6 @@ extension ServerData {
 	}
 
 	private class func updateDatabase(_ values: [String: Any]) {
-		gqldb.updateInsert("Character", values)
+		gqldb.updateInsert("People", values)
 	}
 }

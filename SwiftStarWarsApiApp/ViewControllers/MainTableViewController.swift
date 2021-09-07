@@ -10,7 +10,7 @@ import GraphQLite
 
 class MainTableViewController: UITableViewController {
 
-	private var characters: [Character] = []
+	private var characters: [People] = []
 	private var observerId: String?
 
 	override func viewDidLoad() {
@@ -22,13 +22,14 @@ class MainTableViewController: UITableViewController {
 	}
 
 	func loadPeople() {
-		characters = Character.fetchAll(gqldb)
+		characters = People.fetchAll(gqldb)
 	}
 
 	func createObserver() {
 		let types: [GQLObserverType] = [.insert, .update]
 
-		observerId = Character.createObserver(gqldb, types) { [self] (method, objectId) in
+		observerId = People.createObserver(gqldb, types) { [self] (method, objectId) in
+
 			if method == "INSERT" {
 				refreshInsert(objectId)
 			}
@@ -39,7 +40,7 @@ class MainTableViewController: UITableViewController {
 	}
 
 	func refreshInsert(_ objectId: Any) {
-		if let object = Character.fetchOne(gqldb, key: objectId) {
+		if let object = People.fetchOne(gqldb, key: objectId) {
 			DispatchQueue.main.async { [self] in
 				characters.append(object)
 				tableView.reloadData()
@@ -48,7 +49,7 @@ class MainTableViewController: UITableViewController {
 	}
 
 	func refreshUpdate(_ objectId: Any) {
-		if let object = Character.fetchOne(gqldb, key: objectId) {
+		if let object = People.fetchOne(gqldb, key: objectId) {
 			let index = indexOf(objectId)
 			DispatchQueue.main.async { [self] in
 				if let index = index {
@@ -60,7 +61,7 @@ class MainTableViewController: UITableViewController {
 	}
 
 	func indexOf(_ objectId: Any) -> Int? {
-		for (index, object) in characters.enumerated() where object.characterId == objectId as? String ?? ""{
+		for (index, object) in characters.enumerated() where object.id == objectId as? String ?? ""{
 				return index
 			}
 		return nil
@@ -77,15 +78,13 @@ class MainTableViewController: UITableViewController {
 			cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
 		}
 
-		let people = characters[indexPath.row]
-		cell?.textLabel?.text = people.name
+		cell?.textLabel?.text = characters[indexPath.row].name
 		cell?.accessoryType = .disclosureIndicator
 
 		return cell!
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
 		tableView.deselectRow(at: indexPath, animated: true)
 		let newTableView = CharacterTableViewController(characters[indexPath.row])
 		navigationController?.pushViewController(newTableView, animated: true)

@@ -9,10 +9,10 @@ import UIKit
 
 class CharacterTableViewController: UITableViewController {
 
-	private var character: Character?
+	private var character: People?
 	private var characterParams: Int = 8
 
-	init(_ people: Character) {
+	init(_ people: People) {
 		super.init(nibName: nil, bundle: nil)
 		self.character = people
 	}
