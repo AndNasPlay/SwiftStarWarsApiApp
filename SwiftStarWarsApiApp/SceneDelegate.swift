@@ -12,12 +12,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	var window: UIWindow?
 	var navController: UINavigationController?
 
-	func scene(_ scene: UIScene,
-			   willConnectTo session: UISceneSession,
-			   options connectionOptions: UIScene.ConnectionOptions) {
+	func scene(
+		_ scene: UIScene,
+		willConnectTo session: UISceneSession,
+		options connectionOptions: UIScene.ConnectionOptions) {
 		guard let windowScene = (scene as? UIWindowScene) else { return }
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let viewController = ViewController()
+		GraphQLite.setup()
+		let viewController = MainTableViewController()
 		navController = UINavigationController()
 		navController?.pushViewController(viewController, animated: false)
 		window?.rootViewController = navController
@@ -49,7 +51,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// Use this method to save data, release shared resources, and store enough scene-specific state information
 		// to restore the scene back to its current state.
 	}
-
-
 }
-

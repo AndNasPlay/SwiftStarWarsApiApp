@@ -1,0 +1,16 @@
+PODS:
+  - GraphQLite (1.0.9)
+
+DEPENDENCIES:
+  - GraphQLite
+
+SPEC REPOS:
+  trunk:
+    - GraphQLite
+
+SPEC CHECKSUMS:
+  GraphQLite: 20f71cf3a172a7d5cd9a8b18543aafe3cf5474f8
+
+PODFILE CHECKSUM: 05542bbf33b1a0f8785abdef10ae9585b0e6dc55
+
+COCOAPODS: 1.10.1

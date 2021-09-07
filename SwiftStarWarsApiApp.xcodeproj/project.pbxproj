@@ -3,25 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		16FEB2A326E696DC000436DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2A226E696DC000436DB /* AppDelegate.swift */; };
 		16FEB2A526E696DC000436DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2A426E696DC000436DB /* SceneDelegate.swift */; };
-		16FEB2A726E696DC000436DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2A626E696DC000436DB /* ViewController.swift */; };
+		16FEB2A726E696DC000436DB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2A626E696DC000436DB /* MainTableViewController.swift */; };
 		16FEB2AC26E696DE000436DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FEB2AB26E696DE000436DB /* Assets.xcassets */; };
 		16FEB2AF26E696DE000436DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FEB2AD26E696DE000436DB /* LaunchScreen.storyboard */; };
+		16FEB2B826E7728E000436DB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2B726E7728E000436DB /* Character.swift */; };
+		16FEB2BC26E77374000436DB /* GraphQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2BB26E77374000436DB /* GraphQLite.swift */; };
+		16FEB2BE26E77456000436DB /* ServerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2BD26E77456000436DB /* ServerData.swift */; };
+		16FEB2C526E77B70000436DB /* queries.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2C426E77B70000436DB /* queries.graphql */; };
+		16FEB2C626E78B27000436DB /* queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 16FEB2C426E77B70000436DB /* queries.graphql */; };
+		16FEB2CE26E7AB99000436DB /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FEB2CD26E7AB99000436DB /* CharacterTableViewController.swift */; };
+		705BA03E6998233B435F4E69 /* libPods-SwiftStarWarsApiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1949A09070323D80686E19 /* libPods-SwiftStarWarsApiApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01CAEFD24CE984E2B459F91A /* Pods-SwiftStarWarsApiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStarWarsApiApp.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStarWarsApiApp/Pods-SwiftStarWarsApiApp.debug.xcconfig"; sourceTree = "<group>"; };
 		16FEB29F26E696DC000436DB /* SwiftStarWarsApiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStarWarsApiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FEB2A226E696DC000436DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FEB2A426E696DC000436DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		16FEB2A626E696DC000436DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16FEB2A626E696DC000436DB /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		16FEB2AB26E696DE000436DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16FEB2AE26E696DE000436DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16FEB2B026E696DE000436DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FEB2B726E7728E000436DB /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		16FEB2BB26E77374000436DB /* GraphQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLite.swift; sourceTree = "<group>"; };
+		16FEB2BD26E77456000436DB /* ServerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerData.swift; sourceTree = "<group>"; };
+		16FEB2C426E77B70000436DB /* queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = queries.graphql; sourceTree = "<group>"; };
+		16FEB2CD26E7AB99000436DB /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
+		8F1C26BBE5EA2599581899FE /* Pods-SwiftStarWarsApiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStarWarsApiApp.release.xcconfig"; path = "Target Support Files/Pods-SwiftStarWarsApiApp/Pods-SwiftStarWarsApiApp.release.xcconfig"; sourceTree = "<group>"; };
+		AA1949A09070323D80686E19 /* libPods-SwiftStarWarsApiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftStarWarsApiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705BA03E6998233B435F4E69 /* libPods-SwiftStarWarsApiApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,8 @@
 			children = (
 				16FEB2A126E696DC000436DB /* SwiftStarWarsApiApp */,
 				16FEB2A026E696DC000436DB /* Products */,
+				E40B2420A047E9318BD9808B /* Pods */,
+				94434B75F71BA333F65B9DF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,60 @@
 		16FEB2A126E696DC000436DB /* SwiftStarWarsApiApp */ = {
 			isa = PBXGroup;
 			children = (
+				16FEB2BA26E772FE000436DB /* Network */,
+				16FEB2B626E77267000436DB /* Models */,
+				16FEB2CA26E794BA000436DB /* ViewControllers */,
 				16FEB2A226E696DC000436DB /* AppDelegate.swift */,
 				16FEB2A426E696DC000436DB /* SceneDelegate.swift */,
-				16FEB2A626E696DC000436DB /* ViewController.swift */,
 				16FEB2AB26E696DE000436DB /* Assets.xcassets */,
 				16FEB2AD26E696DE000436DB /* LaunchScreen.storyboard */,
 				16FEB2B026E696DE000436DB /* Info.plist */,
 			);
 			path = SwiftStarWarsApiApp;
+			sourceTree = "<group>";
+		};
+		16FEB2B626E77267000436DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16FEB2B726E7728E000436DB /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16FEB2BA26E772FE000436DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				16FEB2BB26E77374000436DB /* GraphQLite.swift */,
+				16FEB2BD26E77456000436DB /* ServerData.swift */,
+				16FEB2C426E77B70000436DB /* queries.graphql */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		16FEB2CA26E794BA000436DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				16FEB2A626E696DC000436DB /* MainTableViewController.swift */,
+				16FEB2CD26E7AB99000436DB /* CharacterTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		94434B75F71BA333F65B9DF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA1949A09070323D80686E19 /* libPods-SwiftStarWarsApiApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E40B2420A047E9318BD9808B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01CAEFD24CE984E2B459F91A /* Pods-SwiftStarWarsApiApp.debug.xcconfig */,
+				8F1C26BBE5EA2599581899FE /* Pods-SwiftStarWarsApiApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16FEB2B326E696DE000436DB /* Build configuration list for PBXNativeTarget "SwiftStarWarsApiApp" */;
 			buildPhases = (
+				39D8FB3CA24A27724D6BF76A /* [CP] Check Pods Manifest.lock */,
 				16FEB29B26E696DB000436DB /* Sources */,
 				16FEB29C26E696DB000436DB /* Frameworks */,
 				16FEB29D26E696DB000436DB /* Resources */,
+				F58A9C63A41B06E93247163C /* [CP] Embed Pods Frameworks */,
+				16FEB2C726E78E4B000436DB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -121,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FEB2C626E78B27000436DB /* queries.graphql in Resources */,
 				16FEB2AF26E696DE000436DB /* LaunchScreen.storyboard in Resources */,
 				16FEB2AC26E696DE000436DB /* Assets.xcassets in Resources */,
 			);
@@ -128,14 +196,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16FEB2C726E78E4B000436DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		39D8FB3CA24A27724D6BF76A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftStarWarsApiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58A9C63A41B06E93247163C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftStarWarsApiApp/Pods-SwiftStarWarsApiApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftStarWarsApiApp/Pods-SwiftStarWarsApiApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftStarWarsApiApp/Pods-SwiftStarWarsApiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16FEB29B26E696DB000436DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16FEB2A726E696DC000436DB /* ViewController.swift in Sources */,
+				16FEB2BE26E77456000436DB /* ServerData.swift in Sources */,
+				16FEB2BC26E77374000436DB /* GraphQLite.swift in Sources */,
+				16FEB2A726E696DC000436DB /* MainTableViewController.swift in Sources */,
 				16FEB2A326E696DC000436DB /* AppDelegate.swift in Sources */,
 				16FEB2A526E696DC000436DB /* SceneDelegate.swift in Sources */,
+				16FEB2CE26E7AB99000436DB /* CharacterTableViewController.swift in Sources */,
+				16FEB2B826E7728E000436DB /* Character.swift in Sources */,
+				16FEB2C526E77B70000436DB /* queries.graphql in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +403,7 @@
 		};
 		16FEB2B426E696DE000436DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01CAEFD24CE984E2B459F91A /* Pods-SwiftStarWarsApiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +423,7 @@
 		};
 		16FEB2B526E696DE000436DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1C26BBE5EA2599581899FE /* Pods-SwiftStarWarsApiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
